@@ -1,0 +1,76 @@
+.title
+  +bold
+  color: $titleColor
+  text-align: center
+  font-size: 30px
+  font-weight: 700
+  span
+    color: $mainColor
+img
+  display: block
+input
+  outline: none
+  border: none
+  +light
+  padding: 12px 16px
+  background-color: $whiteColor
+  &::placeholder
+    font-size: 14px
+    color: #303030
+    +light
+  &:focus
+    background-color: lighten($mainColor, 35%)
+    border-radius: 2px
+.button
+  +bold
+  padding: 20px 49px
+  border: none
+  outline: none
+  font-size: 14px
+  text-transform: uppercase
+  border-radius: 25px
+  color: #fff
+  background: $mainColorGrad
+  box-shadow: 0 0 10px $mainColor
+  cursor: pointer
+  transition: 0.5s
+  &:hover
+    box-shadow: 0 0 20px $mainColor
+    color: darken($hoverMain, 20%)
+.button-green
+  color: $hoverMain
+  padding: 19px 55px
+  border: 1px solid $hoverMain
+  background: #fff
+  box-shadow: none
+  &:hover
+    box-shadow: 0 0 7px $hoverMain
+    background: $hoverMain
+    color: #fff
+  &-prim
+    background: $hoverMain
+    color: #fff
+.test-prev-btn
+  margin-right: 30px
+  &:hover
+    color: #d0d0d0
+.button-op
+  background: #ffffff
+  color: #d0d0d0
+  border: 1px solid #d0d0d0
+  box-shadow: none
+  &:hover
+    box-shadow: none
+.btn-color
+  background: #ffffff
+  color: $mainColor
+  border-color: $mainColor
+  &:hover
+    color: $hoverMain 
+
+.clearfix:after
+  content: ''
+  display: block
+  clear: both
+.inputGood:focus
+  background-color: lighten($hoverMain, 30%)
