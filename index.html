@@ -1,12 +1,1188 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
   <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Apriori</title>
+  <link rel="shortcut icon" href="images/favicon/favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
+
+  <header class="header">
+    <div class="container">
+      <div class="header-wrap">
+        <div class="header-logo">
+          <a href="index.html" class="logo-link">
+            <img src="images/header/logo.png" alt="Apriori">
+            <p>Apriori</p>
+          </a>
+        </div>
+        
+        <nav class="header-nav">
+          <ul>
+            <li><a href="#" class="nav-link">Клиенты</a></li>
+            <li><a href="#" class="nav-link">Кофе</a></li>
+            <li><a href="#" class="nav-link">Контакты</a></li>
+          </ul>
+        </nav>
+
+        <div class="header-phone">
+          <div class="phone-icon call-popup"></div>
+          <div class="phone-wrap">
+            <a href="tel:+79221927653" class="phone-link">+7 911 922 83 83</a>
+            <a href="#" class="phone-popup call-popup">Заказать звонок</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="header-main">
+        <h1 class="header-main-title title">
+          Увеличьте продуктивность и настроение
+          Ваших сотрудников за счет <span>своевременной
+          поставки отборного Колумбийского кофе</span>
+        </h1>
+        <p class="header-main-subtitle">
+          <span>Доставим</span> к Вам в офис, ресторан, гостиницу
+          или точку CoffeeToGo!
+        </p>
+
+        <div class="header-main-items">
+          <div class="header-main-items-left">
+            <div class="items">
+              <div class="items-image">
+                <img src="images/main/icon-01.png" alt="Кофе от 1 кг">
+              </div>
+              <div class="items-text">
+                Оперативные поставки<br>
+                кофе от 1 кг
+              </div>
+            </div>
+
+            <div class="items">
+              <div class="items-image">
+                <img src="images/main/icon-03.png" alt="Цена от 6 рублей">
+              </div>
+              <div class="items-text">
+                Цена одной чашки<br>
+                кофе от 6 руб.
+              </div>
+            </div>  
+          </div>
+
+          <div class="header-main-items-right">
+            <div class="items">
+              <div class="items-image">
+                <img src="images/main/icon-02.png" alt="18 сортов">
+              </div>
+              <div class="items-text">
+                18 сортов качественного<br>
+                свежеобжаренного кофе
+              </div>
+            </div>
+            <div class="items">
+              <div class="items-image">
+                <img src="images/main/icon-04.png" alt="Доставка за 24 часа">
+              </div>
+              <div class="items-text">
+                Доставка кофе<br>
+                всего за 24 часа
+              </div>
+            </div>
+          </div>
+          
+        </div>
+
+        <div class="form-center">
+          <div class="header-main-form">
+            <h2 class="header-form-title">
+              Закажите поставку <strong>свежеобжаренного кофе</strong> у нас и получите до <strong>1 кг кофе в подарок</strong>
+              уже <strong>сегодня!</strong>
+            </h2>
+            <form action="#" class="header-form">
+              <input class="form-input" type="text" name="name" placeholder="Ваше имя">
+              <input class="form-input" type="tel" name="phone" placeholder="Ваш телефон">
+              <button class="button form-btn call-me">Заказать звонок</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="services">
+      <div class="container">
+        <h2 class="services-title title">
+          Чаще всего <span>нашими услугами</span> пользуются:
+        </h2>
+
+        <div class="services-wrap">
+          <div class="services-wrap-block">
+            <div class="services-wrap__image">
+              <img src="images/services/notebook.png" alt="Офисы">
+            </div>
+            <div class="services-wrap__content">
+              <h5>Офисы</h5>
+              <p>С количеством сотрудников от 5
+                до 250 человек</p>
+              <button class="button services-btn button-green details-btn">
+                Подробнее
+              </button>
+            </div>
+          </div>
+          <div class="services-wrap-block">
+            <div class="services-wrap__image">
+              <img src="images/services/tray.png" alt="Рестораны">
+            </div>
+            <div class="services-wrap__content">
+              <h5>Рестораны</h5>
+              <p>С количеством посадочных
+                мест от 20 до 200 человек</p>
+              <button class="button services-btn button-green details-btn">
+                Подробнее
+              </button>
+            </div>
+          </div>
+          <div class="services-wrap-block">
+            <div class="services-wrap__image">
+              <img src="images/services/key.png" alt="Гостиницы">
+            </div>
+            <div class="services-wrap__content">
+              <h5>Гостиницы</h5>
+              <p>Спец. предложение «Кофе
+                на завтраки» внутри!</p>
+              <button class="button services-btn button-green details-btn">
+                Подробнее
+              </button>
+            </div>
+          </div>
+          <div class="services-wrap-block">
+            <div class="services-wrap__image">
+              <img src="images/services/dice-box.png" alt="Точки CoffeeToGo">
+            </div>
+            <div class="services-wrap__content">
+              <h5>Точки CoffeeToGo</h5>
+              <p>С продажами до 500
+                чашек в день</p>
+              <button class="button services-btn button-green details-btn">
+                Подробнее
+              </button>
+            </div>
+          </div>
+          <div class="services-wrap-block">
+            <div class="services-wrap__image">
+              <img src="images/services/cup.png" alt="Кафе и столовые">
+            </div>
+            <div class="services-wrap__content">
+              <h5>Небольшие кафе
+                и столовые</h5>
+                <p>С посадкой от 10 до 100 мест </p>
+              <button class="button services-btn button-green details-btn">
+                Подробнее
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="request">
+      <div class="container">
+        <div class="request-wrap">
+          <h2 class="request-title title">
+            Если у Вас <span>другой вид бизнеса,</span> просто <span>оставьте заявку</span>
+            и мы сделаем для Вас <span>эксклюзивное предложение!</span>
+          </h2>
   
+          <div class="request-form">
+            <form action="#" class="header-form">
+              <input class="form-input request-input" name="name" type="text" placeholder="Ваше имя">
+              <input class="form-input request-input" type="tel" name="phone" placeholder="Ваш телефон">
+              <button class="button form-btn call-me">Заказать звонок</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="test">
+      <div class="container">
+        <h2 class="test-title title">
+          Пройдите короткий тест и получите
+          <span>до 1 кг кофе в подарок!</span>
+        </h2>
+
+        <div class="test-wrap">
+          <div class="test-block test-block-1 test-block-active">
+            <h5 class="test-block-question">
+              Куда Вам требуется поставить кофе?
+            </h5>
+            <div class="test-block-wrapper">
+              <div class="test-block-wrapper-item">
+                <div class="item-image">
+                  <img src="images/test/image-01.jpg" alt="Офис">
+                </div>
+                <div class="item-title">
+                  Офис
+                </div>
+              </div>
+              <div class="test-block-wrapper-item">
+                <div class="item-image">
+                  <img src="images/test/image-02.jpg" alt="Ресторан">
+                </div>
+                <div class="item-title">
+                  Ресторан
+                </div>
+              </div>
+              <div class="test-block-wrapper-item">
+                <div class="item-image">
+                  <img src="images/test/image-03.jpg" alt="Гостиница">
+                </div>
+                <div class="item-title">
+                  Гостиница
+                </div>
+              </div>
+              <div class="test-block-wrapper-item">
+                <div class="item-image">
+                  <img src="images/test/image-04.jpg" alt="CoffeeToGo">
+                </div>
+                <div class="item-title">
+                  CoffeeToGo
+                </div>
+              </div>
+              <div class="test-block-wrapper-item">
+                <div class="item-image">
+                  <img src="images/test/image-05.jpg" alt="Другое">
+                </div>
+                <div class="item-title">
+                  Другое
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="test-block test-block-2 ">
+            <h5 class="test-block-question">
+              Сколько человек в день будут пить кофе?
+            </h5>
+            <div class="test-block-wrapper">
+              <input class="test-block-input" type="text" placeholder="Введите предполагаемое количество человек">
+            </div>
+            <div class="test-block-image-left">
+              <img src="images/test/grains-left.png" alt="Натуральные зерна">
+            </div>
+            <div class="test-block-image-right">
+              <img src="images/test/grains-right.png" alt="Натуральные зерна">
+            </div>
+          </div>
+
+          <div class="test-block test-block-3 ">
+            <h5 class="test-block-question">
+              Какой кофе Вы предпочитаете пить?
+            </h5>
+            
+            <div class="test-block-wrapper">
+              <div class="test-block-3-item">
+                <div class="test-block-3-item-image">
+                  <img src="images/test/bitter-coffee.png" alt="С горчинкой">
+                </div>
+                <div class="item-title">
+                  С горчинкой
+                </div>
+              </div>
+              <div class="test-block-3-item">
+                <div class="test-block-3-item-image">
+                  <img src="images/test/sour-coffee.png" alt="С кислинкой">
+                </div>
+                <div class="item-title">
+                  С кислинкой
+                </div>
+              </div>
+              <div class="test-block-3-item">
+                <div class="test-block-3-item-image">
+                  <img src="images/test/hard-coffee.png" alt="Крепкий">
+                </div>
+                <div class="item-title">
+                  Крепкий
+                </div>
+              </div>
+              <div class="test-block-3-item">
+                <div class="test-block-3-item-image">
+                  <img src="images/test/other-coffee.png" alt="Другой">
+                </div>
+                <div class="item-title">
+                  Другой
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="test-block test-block-4 ">
+            <h5 class="test-block-question">
+              Ваша контактная информация
+            </h5>
+            
+            <div class="test-block-wrapper">
+              <input class="test-block-input" type="text" name="name" placeholder="Ваше имя">
+              <input class="test-block-input" type="tel" name="phone" placeholder="Ваш телефон">
+            </div>
+            <div class="test-block-image-left">
+              <img src="images/test/grains-left.png" alt="Натуральные зерна">
+            </div>
+            <div class="test-block-image-right">
+              <img src="images/test/grains-right.png" alt="Натуральные зерна">
+            </div>
+          </div>
+
+          <div class="test-button-wrap">
+            <button disabled="disabled" class="button test-prev-btn button-op">Предыдущий вопрос</button>
+            <button class="button test-next-btn">Следующий вопрос</button>
+            <button class="button present-btn">Получить подарок</button>
+          </div>
+          <div class="test-question-is">
+            <span>1</span> из 
+            <img src="images/test/four.png" alt="Apriori">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="countries">
+      <div class="container">
+        <h3 class="countries-title title">
+          <span>Откуда мы возим</span> для Вас бодрящий ароматный кофе
+        </h3>
+
+        <div class="countries-wrap">
+          <div class="countries-wrap-content">
+            <div class="countries-image-wrap">
+              <div class="countries-image">
+                <img src="images/countries/columbia.jpg" alt="Колумбия">
+              </div>
+            </div>
+
+            <div class="countries-text">
+              <h5 class="countries-text-title">
+                Колумбия
+              </h5>
+              <p>
+                <strong>Колумбийская арабика</strong> имеет невероятно сбалансированный вкус с <strong>легкой
+                горчинкой и мягкой кислинкой,</strong> который в смеси дает благородный <strong>привкус
+                горького миндаля и темного шоколада</strong>.
+              </p>
+            </div>
+          </div>
+
+          <div class="countries-wrap-content">
+            <div class="countries-text countries-text-center">
+              <h5 class="countries-text-title">
+                Вьетнам
+              </h5>
+              <p>
+                Вьетнамский кофе отличается поразительно <strong>мягким вкусом.</strong> Один из самых
+                популярных видов <strong>вьетнамской робусты</strong> обладает легким <strong>фисташковым
+                привкусом</strong> с едва заметной <strong>горчинкой какао.</strong>
+              </p>
+            </div>
+
+            <div class="countries-image-wrap">
+              <div class="countries-image">
+                <img src="images/countries/vietnam.jpg" alt="Вьетнам">
+              </div>
+            </div>
+          </div>
+
+          <div class="countries-wrap-content">
+            <div class="countries-image-wrap">
+              <div class="countries-image">
+                <img src="images/countries/brazil.jpg" alt="Бразилия">
+              </div>
+            </div>
+
+            <div class="countries-text">
+              <h5 class="countries-text-title">
+                Бразилия
+              </h5>
+              <p>
+                Вкус бразильского кофе имеет <strong>приятную горчинку,</strong> он <strong>очень насыщенный
+                и бодрящий.</strong> При смешивани с другими сортами <strong>бразильская арабика</strong> может
+                давать едва заметный <strong>шоколадный и ореховый аромат.</strong>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="goods">
+      <div class="container">
+        <h3 class="goods-title title">
+          Самый <span>вкусный и бодрящий кофе</span> для Вас
+        </h3>
+        
+        <img class="goods-image-grains" src="images//goods/grains.jpg" alt="Вкусный и бодрящий кофе">
+
+        <div class="goods-filter">
+          <button class="button filter-btn">
+            <img src="images/goods/grain.png" alt="Моносорта">
+            Моносорта             
+          </button>
+          <button class="button filter-btn">
+            <img src="images/goods/grains-icon.png" alt="Смеси">
+            Смеси              
+          </button>
+        </div>
+
+        <div class="goods-wrap">
+          <div class="goods-block monosort">
+            <div class="goods-image">
+              <img src="images/goods/colombia-huila.jpg" alt="Colombia huila">
+            </div>
+            <h5 class="goods-name">
+              Colombia huila
+            </h5>
+            <p class="goods-desc">
+              Во вкусе какао, красное
+              яблоко, мед, темный шоколад
+            </p>
+            <p class="goods-price">
+              1100 руб.
+            </p>
+            <button class="button button-green button-green-prim">
+              Заказать
+            </button>
+          </div>
+
+          <div class="goods-block monosort">
+            <div class="goods-image">
+              <img src="images/goods/colombia-quindo.jpg" alt="Colombia quindo">
+            </div>
+            <h5 class="goods-name">
+              Colombia quindo
+            </h5>
+            <p class="goods-desc">
+              Во вкусе какао, цитрусовые,
+              красные ягоды
+            </p>
+            <p class="goods-price">
+              1100 руб.
+            </p>
+            <button class="button button-green button-green-prim">
+              Заказать
+            </button>
+          </div>
+
+          <div class="goods-block monosort">
+            <div class="goods-image">
+              <img src="images/goods/colombia-narino.jpg" alt="Colombia narino">
+            </div>
+            <h5 class="goods-name">
+              Colombia narino
+            </h5>
+            <p class="goods-desc">
+              Во вкусе темный шоколад,
+              манго, абрикос
+            </p>
+            <p class="goods-price">
+              1200 руб.
+            </p>
+            <button class="button button-green button-green-prim">
+              Заказать
+            </button>
+          </div>
+
+          <div class="goods-block monosort">
+            <div class="goods-image">
+              <img src="images/goods/brazil-santos.jpg" alt="Brasil Santos">
+            </div>
+            <h5 class="goods-name">
+              Brasil Santos
+            </h5>
+            <p class="goods-desc">
+              Во вкусе бразильский орех,
+              черная смородина
+            </p>
+            <p class="goods-price">
+              1200 руб.
+            </p>
+            <button class="button button-green button-green-prim">
+              Заказать
+            </button>
+          </div>
+
+          <div class="goods-block monosort">
+            <div class="goods-image">
+              <img src="images/goods/tanzania.jpg" alt="Tanzania aa">
+            </div>
+            <h5 class="goods-name">
+              Tanzania aa
+            </h5>
+            <p class="goods-desc">
+              Во вкусе шиповник, мед,
+              ягодное варенье
+            </p>
+            <p class="goods-price">
+              1300 руб.
+            </p>
+            <button class="button button-green button-green-prim">
+              Заказать
+            </button>
+          </div>
+
+          <div class="goods-block monosort">
+            <div class="goods-image">
+              <img src="images/goods/uganda.jpg" alt="Uganda bugisu">
+            </div>
+            <h5 class="goods-name">
+              Uganda bugisu
+            </h5>
+            <p class="goods-desc">
+              Во вкусе деликатные<br>
+              нотки какао
+            </p>
+            <p class="goods-price">
+              1200 руб.
+            </p>
+            <button class="button button-green button-green-prim">
+              Заказать
+            </button>
+          </div>
+
+          <div class="goods-block monosort">
+            <div class="goods-image">
+              <img src="images/goods/costa-rika.jpg" alt="Costa rika tarrazu">
+            </div>
+            <h5 class="goods-name">
+              Costa rika tarrazu
+            </h5>
+            <p class="goods-desc">
+              Во вкусе нотки груши,
+              чернослива
+            </p>
+            <p class="goods-price">
+              1500 руб.
+            </p>
+            <button class="button button-green button-green-prim">
+              Заказать
+            </button>
+          </div>
+
+          <div class="goods-block monosort">
+            <div class="goods-image">
+              <img src="images/goods/peru-puno.jpg" alt="Peru puno shg">
+            </div>
+            <h5 class="goods-name">
+              Peru puno shg
+            </h5>
+            <p class="goods-desc">
+              Во вкусе темный шоколад,
+              косточковые фрукты
+            </p>
+            <p class="goods-price">
+              1200 руб.
+            </p>
+            <button class="button button-green button-green-prim">
+              Заказать
+            </button>
+          </div>
+
+          <div class="goods-block monosort">
+            <div class="goods-image">
+              <img src="images/goods/honduras-san-marcos.jpg" alt="Honduras san marcos shg">
+            </div>
+            <h5 class="goods-name">
+              Honduras san marcos shg
+            </h5>
+            <p class="goods-desc">
+              Во вкусе темный шоколад,
+              сухофрукты, тростниковый сахар
+            </p>
+            <p class="goods-price">
+              1200 руб.
+            </p>
+            <button class="button button-green button-green-prim">
+              Заказать
+            </button>
+          </div>
+
+          <div class="goods-block mixes">
+            <div class="goods-image">
+              <img src="images/goods/honduras-santa-rosa.jpg" alt="Honduras santa rosa">
+            </div>
+            <h5 class="goods-name">
+              Honduras santa rosa
+              de copan shg
+            </h5>
+            <p class="goods-desc">
+              Во вкусе горький шоколад,
+              лимонная цедра, красные ягоды
+            </p>
+            <p class="goods-price">
+              1000 руб.
+            </p>
+            <button class="button button-green button-green-prim">
+              Заказать
+            </button>
+          </div>
+
+          <div class="goods-block mixes">
+            <div class="goods-image">
+              <img src="images/goods/eldorado-sue.jpg" alt="El dorado sue">
+            </div>
+            <h5 class="goods-name">
+              El dorado sue
+            </h5>
+            <p class="goods-desc">
+              Во вкусе какао, пряности,
+              чернослив
+            </p>
+            <p class="goods-price">
+              1200 руб.
+            </p>
+            <button class="button button-green button-green-prim">
+              Заказать
+            </button>
+          </div>
+
+          <div class="goods-block mixes">
+            <div class="goods-image">
+              <img src="images/goods/eldorado-bochica.jpg" alt="El dorado bochica">
+            </div>
+            <h5 class="goods-name">
+              El dorado bochica
+            </h5>
+            <p class="goods-desc">
+              Во вкусе темный шоколад,
+              пряности, лесной орех
+            </p>
+            <p class="goods-price">
+              1250 руб.
+            </p>
+            <button class="button button-green button-green-prim">
+              Заказать
+            </button>
+          </div>
+
+          <div class="goods-block mixes">
+            <div class="goods-image">
+              <img src="images/goods/smacaf-office.jpg" alt="Smacaf office blend">
+            </div>
+            <h5 class="goods-name">
+              Smacaf office blend
+            </h5>
+            <p class="goods-desc">
+              Смесь для офиса с мягкой
+              горчинкой. <span>Доставка от 10 кг</span>
+            </p>
+            <p class="goods-price">
+              700 руб.
+            </p>
+            <button class="button button-green button-green-prim">
+              Заказать
+            </button>
+          </div>
+
+          <div class="goods-block mixes">
+            <div class="goods-image">
+              <img src="images/goods/smacaf-aroma.jpg" alt="Smacaf aroma">
+            </div>
+            <h5 class="goods-name">
+              Smacaf aroma
+            </h5>
+            <p class="goods-desc">
+              Смесь зерен арабики
+              и робусты средней обжарки
+            </p>
+            <p class="goods-price">
+              800 руб.
+            </p>
+            <button class="button button-green button-green-prim">
+              Заказать
+            </button>
+          </div>
+
+          <div class="goods-block mixes">
+            <div class="goods-image">
+              <img src="images/goods/smacaf-bar.jpg" alt="Smacaf bar">
+            </div>
+            <h5 class="goods-name">
+              Smacaf bar
+            </h5>
+            <p class="goods-desc">
+              Во вкусе насыщенная горчинка,
+              приятный аромат миндаля
+            </p>
+            <p class="goods-price">
+              900 руб.
+            </p>
+            <button class="button button-green button-green-prim">
+              Заказать
+            </button>
+          </div>
+
+          <div class="goods-block mixes">
+            <div class="goods-image">
+              <img src="images/goods/smacaf-bravi.jpg" alt="Smacaf bravi">
+            </div>
+            <h5 class="goods-name">
+              Smacaf bravi
+            </h5>
+            <p class="goods-desc">
+              Яркая смесь
+              с фруктовыми оттенками
+            </p>
+            <p class="goods-price">
+              950 руб.
+            </p>
+            <button class="button button-green button-green-prim">
+              Заказать
+            </button>
+          </div>
+
+          <div class="goods-block mixes">
+            <div class="goods-image">
+              <img src="images/goods/smacaf-fruity.jpg" alt="Smacaf fruity">
+            </div>
+            <h5 class="goods-name">
+              Smacaf fruity
+            </h5>
+            <p class="goods-desc">
+              Имеет аромат цитрусовых
+              с цветочными нотками
+            </p>
+            <p class="goods-price">
+              1100 руб.
+            </p>
+            <button class="button button-green button-green-prim">
+              Заказать
+            </button>
+          </div>
+
+          <div class="goods-block mixes">
+            <div class="goods-image">
+              <img src="images/goods/esperansa.jpg" alt="Esperansa">
+            </div>
+            <h5 class="goods-name">
+              Esperansa
+            </h5>
+            <p class="goods-desc">
+              Фирменная смесь арабики
+              и робусты с нотками шоколада
+            </p>
+            <p class="goods-price">
+              800 руб.
+            </p>
+            <button class="button button-green button-green-prim">
+              Заказать
+            </button>
+          </div>
+        </div>
+      </div>
+      <div class="pile-grains-image">
+        <img src="images/pile-grains.jpg" alt="вкусный и бодрящий кофе">
+      </div>
+    </section>
+
+    <section class="benefit clearfix">
+        <h2 class="benefit-title title">
+          Как чашка свежесваренного кофе влиет на Ваш организм
+        </h2>
+        <div class="benefit-wrap">
+          <div class="benefit-wrap-circle-bord">
+            <div class="benefit-wrap-image">
+              <img src="images/big-cup-bg.jpg" alt="Влияние кофе на организм человека">
+            </div>
+          </div>
+
+          <div class="benefit-wrap-text">
+            <div class="benefit-wrap-text-block">
+              <div class="benefit-wrap-text-point"></div>
+              Горячий кофе стимулирует выработку <strong>адреналина,</strong> и Вы чувствуете <strong>
+                прилив сил и энергии</strong>
+            </div>
+
+            <div class="benefit-wrap-text-block">
+              <div class="benefit-wrap-text-point"></div>
+              Свежий кофе влияет на <strong>гормон удовлетворения допамин, 
+              снижает тревожность,</strong>
+              Вы становитесь <strong>целеустремлены и собраны</strong>
+            </div>
+
+            <div class="benefit-wrap-text-block">
+              <div class="benefit-wrap-text-point"></div>
+              После попадения в организм кофе <strong>блокирует гормон усталости аденозин,</strong>
+                Вы чувствуете себя <strong>бодрым и отдохнувшим</strong>
+            </div>
+
+            <div class="benefit-wrap-text-block">
+              <div class="benefit-wrap-text-point"></div>
+              Ароматный кофе <strong>повышает выработку гормона счастья серотонина,</strong>
+              у Вас <strong>поднимается нстроение и появляется улыбка</strong>
+            </div>
+          </div>
+          <div class="clear"></div>
+          <button class="button benefit-btn call-popup">
+            заказать кофе прямо сейчас
+          </button>
+        </div>        
+    </section>
+
+    <section class="map">
+      <iframe id="map" src="https://yandex.ru/map-widget/v1/?um=constructor%3Ad5ede3b8be8a5059d65af7d3a7b73ce8849b8e2da894d1fe0dd8e6822155696d&amp;source=constructor"></iframe>
+      <div class="container">
+        <div class="map-contacts">
+          <h3 class="map-contacts-title title">
+            <span>Свяжитесь</span> с нами
+          </h3>
+
+          <div class="map-contacts-block-info">
+            <div class="map-contacts-icon"></div>
+            <div class="map-contacts-contact">
+              <p class="map-contacts-contact-title">
+                Адрес:
+              </p>
+              <p>
+                г. Санкт-Петербург, ул. Киевская,<br>
+                дом 5, корпус 6
+              </p>
+            </div>
+          </div>
+
+          <div class="map-contacts-block-info">
+            <div class="map-contacts-icon"></div>
+            <div class="map-contacts-contact">
+              <p class="map-contacts-contact-title">
+                Режим работы:
+              </p>
+              <p>
+                пн-пт: 9.00 - 20.00 <br>
+                сб, вс: выходной
+              </p>
+            </div>
+          </div>
+
+          <div class="map-contacts-block-info">
+            <div class="map-contacts-icon"></div>
+            <div class="map-contacts-contact">
+              <p class="map-contacts-contact-title">
+                Телефон:
+              </p>
+              <a href="tel:+79119228888" class="map-contacts-phone">+7 911 922 88 88</a>
+            </div>
+          </div>
+
+          <div class="map-contacts-block-info">
+            <div class="map-contacts-icon"></div>
+            <div class="map-contacts-contact">
+              <p class="map-contacts-contact-title">
+                E-mail:
+              </p>
+              <a href="mailto:apriori.c@mail.ru" class="map-contacts-mail">apriori.c@mail.ru</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-wrap">
+        <p>Все права защищены</p>
+        <p>Apriori 2020</p>
+        <p>Сайт разработал
+          <a href="#" class="footer-link">Arkhipov_code</a>
+        </p>
+      </div>
+    </div>
+  </footer>
+  
+  <div class="modal animated">
+    <div class="modal-exit">
+      <div class="modal-closed">
+        <span></span>
+        <span></span>
+      </div>
+
+      <h6 class="modal-exit-title">
+        <strong>Не нашли то, что искали?</strong> Оставьте номер телефона и мы вам перезвоним!
+      </h6>
+
+      <div class="modal-wrap-form">
+        <form action="#" class="modal-exit-form">
+          <input class="modal-exit-input" type="text" name="name" placeholder="Ваше имя">
+          <input class="modal-exit-input" type="tel" name="phone" placeholder="Ваш телефон">
+          <button class="button modal-exit-btn">Перезвоните мне</button>
+        </form>
+      </div>
+    </div>
+
+    <div class="modal-thanks">
+      <div class="modal-closed">
+        <span></span>
+        <span></span>
+      </div>
+
+      <h6 class="modal-thanks-title">
+        Спасибо!
+      </h6>
+      <p class="modal-thanks-text">
+        Наш менеджер свяжется с Вами в ближайшее время!
+      </p>
+    </div>
+
+    <div class="modal-order">
+      <div class="modal-closed">
+        <span></span>
+        <span></span>
+      </div>
+
+      <h6 class="modal-order-title">
+        Заполните форму
+        и&nbsp;мы&nbsp;Вам перезвоним!
+      </h6>
+
+      <div class="modal-wrap-form">
+        <form action="#" class="modal-exit-form order-form">
+          <input class="modal-exit-input order-input" type="text" name="name" placeholder="Ваше имя">
+          <input class="modal-exit-input order-input" type="tel" name="phone" placeholder="Ваш телефон">
+          <button class="button order-btn call-me">Перезвоните мне</button>
+        </form>
+      </div>
+    </div>
+
+    <div class="modal-details">
+      <div class="modal-closed">
+        <span></span>
+        <span></span>
+      </div>
+
+      <div class="modal-details-block">
+        <div class="modal-details-image">
+          <img src="images/popup/popup-office.jpg" alt="Офисы">
+        </div>
+  
+        <div class="modal-details-content">
+          <h6 class="modal-details-title">
+            Офисы
+          </h6>
+          <div class="modal-details-text-block">
+            <span></span>
+            <div class="modal-details-text">
+              18 сортов качественого кофе
+            </div>          
+          </div>
+          <div class="modal-details-text-block">
+            <span></span>
+            <div class="modal-details-text">
+              Стоимость одной чашки кофе
+              для сотрудников от 6 руб.
+            </div>          
+          </div>
+          <div class="modal-details-text-block">
+            <span></span>
+            <div class="modal-details-text">
+              До 1 кг кофе в подарок
+            </div>          
+          </div>
+  
+          <div class="modal-details-form">
+            <div class="modal-details-form-title">
+              Оставьте заявку, и мы сдеаем для Вас
+              <strong>индивидуальное предложение!</strong>
+            </div>
+  
+            <form action="#" class="modal-details-form__form">
+              <input class="modal-exit-input modal-details-input" type="text" name="name" placeholder="Ваше имя">
+              <input class="modal-exit-input modal-details-input" type="tel" name="phone" placeholder="Ваш телефон">
+              <button class="button modal-details-btn call-me">Оставить заявку</button>
+            </form>
+          </div>
+        </div>
+      </div>
+
+      <div class="modal-details-block">
+        <div class="modal-details-image">
+          <img src="images/popup/popup-restaurants.jpg" alt="Рестораны">
+        </div>
+  
+        <div class="modal-details-content">
+          <h6 class="modal-details-title">
+            Рестораны
+          </h6>
+          <div class="modal-details-text-block">
+            <span></span>
+            <div class="modal-details-text">
+              18 сортов качественого кофе
+            </div>          
+          </div>
+          <div class="modal-details-text-block">
+            <span></span>
+            <div class="modal-details-text">
+              Staff coffee (кофе для персонала)
+              от 6 руб. за чашку
+            </div>          
+          </div>
+          <div class="modal-details-text-block">
+            <span></span>
+            <div class="modal-details-text">
+              До 1 кг кофе в подарок
+            </div>          
+          </div>
+  
+          <div class="modal-details-form">
+            <div class="modal-details-form-title">
+              Оставьте заявку, и мы сдеаем для Вас
+              <strong>индивидуальное предложение!</strong>
+            </div>
+  
+            <form action="#" class="modal-details-form__form">
+              <input class="modal-exit-input modal-details-input" type="text" name="name" placeholder="Ваше имя">
+              <input class="modal-exit-input modal-details-input" type="tel" name="phone" placeholder="Ваш телефон">
+              <button class="button modal-details-btn call-me">Оставить заявку</button>
+            </form>
+          </div>
+        </div>
+      </div>
+
+      <div class="modal-details-block">
+        <div class="modal-details-image">
+          <img src="images/popup/popup-hotels.jpg" alt="Гостиницы">
+        </div>
+  
+        <div class="modal-details-content">
+          <h6 class="modal-details-title">
+            Гостиницы
+          </h6>
+          <div class="modal-details-text-block">
+            <span></span>
+            <div class="modal-details-text">
+              Специальное предложение
+              «Кофе для завтрака»
+            </div>          
+          </div>
+          <div class="modal-details-text-block">
+            <span></span>
+            <div class="modal-details-text">
+              18 сортов качественного кофе
+            </div>          
+          </div>
+          <div class="modal-details-text-block">
+            <span></span>
+            <div class="modal-details-text">
+              Готовое решение для лобби-бара
+            </div>          
+          </div>
+  
+          <div class="modal-details-form">
+            <div class="modal-details-form-title">
+              Оставьте заявку, и мы сдеаем для Вас
+              <strong>индивидуальное предложение!</strong>
+            </div>
+  
+            <form action="#" class="modal-details-form__form">
+              <input class="modal-exit-input modal-details-input" type="text" name="name" placeholder="Ваше имя">
+              <input class="modal-exit-input modal-details-input" type="tel" name="phone" placeholder="Ваш телефон">
+              <button class="button modal-details-btn call-me">Оставить заявку</button>
+            </form>
+          </div>
+        </div>
+      </div>
+
+      <div class="modal-details-block">
+        <div class="modal-details-image">
+          <img src="images/popup/popup-coffeeToGo.jpg" alt="Точки CoffeeToGo">
+        </div>
+  
+        <div class="modal-details-content">
+          <h6 class="modal-details-title">
+            Точки CoffeeToGo
+          </h6>
+          <div class="modal-details-text-block">
+            <span></span>
+            <div class="modal-details-text">
+              18 сортов качественного кофе
+            </div>          
+          </div>
+          <div class="modal-details-text-block">
+            <span></span>
+            <div class="modal-details-text">
+              Составление кофейной карты
+            </div>          
+          </div>
+          <div class="modal-details-text-block">
+            <span></span>
+            <div class="modal-details-text">
+              До 1 кг кофе в подарок
+            </div>          
+          </div>
+  
+          <div class="modal-details-form">
+            <div class="modal-details-form-title">
+              Оставьте заявку, и мы сдеаем для Вас
+              <strong>индивидуальное предложение!</strong>
+            </div>
+  
+            <form action="#" class="modal-details-form__form">
+              <input class="modal-exit-input modal-details-input" type="text" name="name" placeholder="Ваше имя">
+              <input class="modal-exit-input modal-details-input" type="tel" name="phone" placeholder="Ваш телефон">
+              <button class="button modal-details-btn call-me">Оставить заявку</button>
+            </form>
+          </div>
+        </div>
+      </div>
+
+      <div class="modal-details-block">
+        <div class="modal-details-image">
+          <img src="images/popup/popup-cafe.jpg" alt="Кафе и столовые">
+        </div>
+  
+        <div class="modal-details-content">
+          <h6 class="modal-details-title">
+            Небольшие кафе
+            и&nbsp;столовые
+          </h6>
+          <div class="modal-details-text-block">
+            <span></span>
+            <div class="modal-details-text">
+              18 сортов качественого кофе
+            </div>          
+          </div>
+          <div class="modal-details-text-block">
+            <span></span>
+            <div class="modal-details-text">
+              Стоимость одной чашки кофе
+              от 6 руб.
+            </div>          
+          </div>
+          <div class="modal-details-text-block">
+            <span></span>
+            <div class="modal-details-text">
+              До 1 кг кофе в подарок
+            </div>          
+          </div>
+  
+          <div class="modal-details-form">
+            <div class="modal-details-form-title">
+              Оставьте заявку, и мы сдеаем для Вас
+              <strong>индивидуальное предложение!</strong>
+            </div>
+  
+            <form action="#" class="modal-details-form__form">
+              <input class="modal-exit-input modal-details-input" type="text" name="name" placeholder="Ваше имя">
+              <input class="modal-exit-input modal-details-input" type="tel" name="phone" placeholder="Ваш телефон">
+              <button class="button modal-details-btn call-me">Оставить заявку</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+  <script src="js/jquery.maskedinput.min.js"></script>
+  <script src="js/modal.js"></script>
+  <script src="js/test.js"></script>
 </body>
 </html>

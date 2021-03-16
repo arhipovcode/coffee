@@ -74,3 +74,26 @@ input
   clear: both
 .inputGood:focus
   background-color: lighten($hoverMain, 30%)
+
+@media (max-width: 1200px)
+  .title
+    font-size: 24px
+    line-height: 36px
+@media (max-width: 992px)
+  .title
+    font-size: 21px
+    line-height: 28px
+@media (max-width: 768px)
+  .title
+    font-size: 18px
+    line-height: 24px
+@media (max-width: 576px)
+  .button-green
+    padding: 14px 35px
+  input
+    &::placeholder
+      font-size: 13px
+@media (max-width: 476px)
+  .title
+    font-size: 17px
+    line-height: 21px

@@ -1,0 +1,39 @@
+.footer
+  padding: 42px 0
+  &-wrap
+    display: flex
+    align-items: center
+    justify-content: space-between
+  &-link
+    position: relative
+    display: block
+    text-align: center
+    color: $mainColor
+    &:after
+      display: block
+      position: absolute
+      bottom: -2px
+      left: 0
+      right: 0
+      margin: 0 auto
+      content: ''
+      width: 100%
+      height: 2px
+      background: $mainColor
+      transition: 0.3s
+    &:hover:after
+      width: 10%
+
+@media (max-width: 992px)
+  .footer
+    &-wrap
+      font-size: 15px
+@media (max-width: 476px)
+  .footer
+    &-wrap
+      flex-direction: column
+      p
+        &:nth-child(2)
+          margin: 15px 0
+    &-link
+      margin-top: 3px

@@ -1,0 +1,84 @@
+.countries
+  padding-top: 235px
+  &-title
+    margin-bottom: 58px
+  &-wrap
+    display: flex
+    align-items: center
+    flex-direction: column
+    &-content
+      display: flex
+      align-items: center
+  &-image
+    width: 270px
+    img
+      border-radius: 50%
+      width: 100%
+    &-wrap
+      display: flex
+      align-items: center
+      justify-content: center
+      border-radius: 50%
+      padding: 45px
+      border: 1px solid $hoverMain
+  &-text
+    color: #303030
+    width: 600px
+    margin-left: 44px
+    p
+      font-size: 14px
+      +light
+      line-height: 22px
+    strong
+      +bold
+    &-center
+      margin-left: 0
+      margin-right: 44px
+    &-title
+      +bold
+      font-size: 20px
+      margin-bottom: 22px
+
+@media (max-width: 1200px)
+  .countries
+    padding-top: 120px
+    &-text
+      max-width: 500px
+@media (max-width: 992px)
+  .countries
+    padding-top: 100px
+    &-text
+      max-width: inherit
+      width: auto
+      &-title
+        margin-bottom: 10px
+    &-image
+      width: 200px
+      &-wrap
+        padding: 20px
+@media (max-width: 768px)
+  .countries
+    padding-top: 80px
+    &-image
+      width: 150px
+    &-text
+      margin-left: 25px
+      &-center
+        margin-left: 0
+        margin-right: 25px
+      &-title
+        font-size: 16px
+@media (max-width: 576px)
+  .countries
+    padding-top: 60px
+    &-wrap
+      &-content
+        flex-direction: column
+        text-align: center
+        &:nth-child(2)
+          flex-direction: column-reverse
+    &-text
+      margin: 20px auto
+      width: 90%
+      &-center
+        

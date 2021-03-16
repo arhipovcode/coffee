@@ -1,0 +1,127 @@
+#map
+  width: 100%
+  height: 600px
+  border: none
+  display: block
+.map
+  display: inline-block
+  position: relative
+  width: 100%
+  clear: both
+  margin-top: -70px
+  box-shadow: 0 0px 10px rgba(0, 0, 0, 0.7)
+  z-index: 10
+  .container
+    position: absolute
+    top: 0
+    left: 0
+    right: 0
+  &-contacts
+    position: absolute
+    padding: 30px 44px 10px 44px
+    top: 58px
+    right: 0
+    max-width: 489px
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.5)
+    border-radius: 10px
+    background-color: $whiteColor
+    &-phone,
+    &-mail
+      color: #303030
+      &:hover
+        color: $mainColor
+    &-title
+      margin-bottom: 46px
+    &-block-info
+      display: flex
+      align-items: flex-start
+      margin-bottom: 24px
+    &-contact
+      font-size: 16px
+      +light
+      line-height: 22px
+      &-title
+        font-size: 18px
+        +bold
+        margin-bottom: 12px
+    &-icon
+      margin-right: 30px
+      width: 39px
+      height: 39px
+      border-radius: 50%
+
+.map-contacts-block-info
+  &:nth-child(2) .map-contacts-icon
+    background: url(../images/contacts/pin.png) no-repeat center, $mainBtnGrad
+  &:nth-child(3) .map-contacts-icon
+    background: url(../images/contacts/icon-time.png) no-repeat center, $mainBtnGrad
+  &:nth-child(4) .map-contacts-icon
+    background: url(../images/contacts/icon-phone.png) no-repeat center, $mainBtnGrad
+  &:nth-child(5) .map-contacts-icon
+    background: url(../images/contacts/icon-mail.png) no-repeat center, $mainBtnGrad
+
+@media (max-width: 1200px)
+  #map
+    height: 450px
+  .map
+    .container
+    &-contacts
+      padding: 20px 34px 10px 34px
+      top: 18px
+      &-block
+        &-info
+          margin-bottom: 15px
+      &-title
+        margin-bottom: 20px
+@media (max-width: 992px)
+  .map
+    margin-top: 40px
+    &-contacts
+      &-contact
+        font-size: 15px
+        &-title
+          margin-bottom: 5px
+      &-icon
+        width: 32px
+        height: 32px
+@media (max-width: 768px)
+  .map
+    .container
+      position: initial
+    &-contacts
+      width: 52%
+      top: 0
+      bottom: 0
+      border-radius: 10px 0 0 10px
+      padding: 40px 0px 0px 20px
+      &-icon
+        margin-right: 20px
+      &-contact
+        font-size: 14px
+        &-title
+          font-size: 16px
+@media (max-width: 576px)
+  #map
+    height: 300px
+  .map
+    .container
+      position: relative
+    &-contacts
+      position: relative
+      padding: 30px 0 0 0
+      width: 100%
+      border-radius: 0
+      box-shadow: none
+      background: #fff
+      &-block
+        &-info
+          justify-content: center
+          &:nth-child(2)
+            br
+              display: none
+          &:nth-child(5)
+            margin-bottom: 30px
+      &-contact
+        min-width: 160px
+        max-width: 160px
+        

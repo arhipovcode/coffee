@@ -1,0 +1,266 @@
+.test
+  padding-top: 180px
+  &-title
+    max-width: 615px
+    margin: 0 auto 79px
+  &-wrap
+    position: relative
+    text-align: center
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1)
+    border-radius: 10px
+    background-color: $whiteColor
+    padding: 63px 58px
+.test-block
+  display: none
+  position: relative
+  &-question
+    color: #303030
+    +bold
+    font-size: 20px
+    margin-bottom: 61px
+  &-wrapper
+    display: flex
+    align-items: flex-start
+    justify-content: space-between
+    margin-bottom: 90px
+    &-item
+      cursor: pointer
+      border-radius: 10px
+      font-size: 16px
+      +light
+      transition: transform .8s, color .2s, box-shadow .5s
+      &:hover
+        color: #ffffff
+        box-shadow: 0 3px 8px rgba(0, 0, 0, 0.15)
+        transform: scale(1.05)
+        .item-title
+          background: $hoverMain
+        .item-image
+          img
+            opacity: 1
+  &-input
+    width: 425px
+    margin: 0 auto
+    padding: 13px 35px
+    border-bottom: 1px solid #303030
+    margin-bottom: 130px
+  &-image-left
+    position: absolute
+    left: 0
+    top: -30px
+  &-image-right
+    position: absolute
+    right: 0
+    top: 0
+.item-image
+  border-radius: 10px 10px 0 0
+  max-height: 203px
+  overflow: hidden
+  img
+    width: 100%
+    opacity: 0.5
+    transition: 0.5s
+.item-title
+  padding: 22px 0
+  border-radius: 0 0 10px 10px
+  transition: background 0.5s
+.test-button-wrap
+  text-align: left
+.test
+  &-prev-btn
+    margin-right: 30px
+  &-next-btn
+  &-question-is
+    position: absolute
+    display: flex
+    align-items: center
+    justify-content: space-between
+    color: #402100
+    +light
+    font-size: 50px
+    bottom: -20px
+    right: -60px
+    span
+      font-size: 90px
+    img
+      margin-left: 20px
+.test-block-active
+  display: block
+.test-block-3
+  &-item
+    cursor: pointer
+    &-image
+      display: flex
+      align-items: center
+      justify-content: center
+      border-radius: 50%
+      padding: 10px
+      width: 225px
+      height: 225px
+      opacity: 0.5
+      overflow: hidden
+      transition: 0.5s
+      img
+        width: 100%
+    &:hover .test-block-3-item-image
+      border: 1px solid $hoverMain
+      opacity: 1
+.test-block-4
+  .test-block-wrapper
+    flex-direction: column
+  .test-block-input
+    text-align: center
+    margin-bottom: 28px
+    &:last-child
+      margin-bottom: 80px
+.present-btn
+  display: none
+.item-active
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5)
+  border-radius: 10px
+  .test-block-3-item-image
+    opacity: 1
+  .item-title
+    background: $hoverMain
+    color: $whiteColor
+  .item-image
+    img
+      opacity: 1
+.hideBtn
+  display: none
+.showBtn
+  display: inline-block
+
+@media (max-width: 1200px)
+  .test
+    padding: 120px 0
+    &-block
+      &-wrapper
+        &-item
+          width: 19%
+    &-question-is
+      right: 0
+      bottom: -70px
+      font-size: 40px
+      span
+        font-size: 70px
+      img
+        width: 140px
+  .item-image
+    max-height: 165px
+@media (max-width: 992px)
+  .test
+    padding: 100px 0
+    &-wrap
+      padding: 50px 30px
+    &-block
+      &-wrapper
+        margin-bottom: 30px
+        &-item
+          font-size: 15px
+      &-question
+        margin-bottom: 40px
+      &-image-left
+        display: none
+      &-image-right
+        top: -30px
+      &-input
+        margin-bottom: 50px
+    &-prev-btn,
+    &-next-btn
+      margin-right: 20px
+      font-size: 13px
+      padding: 14px 17px    
+    &-next-btn
+      margin-right: 0      
+  .item-image
+    max-height: 133px
+  .item-title
+    padding: 15px 0
+  .test-block-3
+    &-item
+      &-image
+        width: 168px
+        height: 168px
+@media (max-width: 768px)
+  .test
+    padding: 80px 0
+    &-question-is
+      font-size: 25px
+      bottom: 0
+      span
+        font-size: 40px
+      img
+        width: 75px
+    &-title
+      max-width: 380px
+      margin-bottom: 50px
+    &-block
+      &-wrapper
+        margin-bottom: 20px
+      &-question
+        font-size: 16px
+        margin-bottom: 30px
+      &-image-right
+        display: none
+    &-prev-btn,
+    &-next-btn
+      margin-right: 10px
+      font-size: 12px
+      padding: 12px 10px
+  .test-block-3
+    &-item
+      &-image
+        width: 120px
+        height: 120px
+  .item
+    &-image
+      max-height: 95px
+    &-title
+      font-size: 14px
+  .test-block-4 .test-block-input:last-child
+    margin-bottom: 50px
+@media (max-width: 576px)
+  .test
+    padding: 60px 0
+    &-question-is
+      bottom: -35px
+    &-button-wrap
+      text-align: center
+    &-block
+      &-input
+        width: 100%
+        margin-bottom: 30px
+    &-next-btn
+      margin-right: 0
+  .test-block-1
+    .test-block-wrapper
+      flex-wrap: wrap
+      justify-content: space-around
+      &-item
+        width: 48%
+        margin-bottom: 20px
+        border: 1px solid $hoverMain
+  .item-image
+    max-height: 160px
+  .test-block-3
+    &-item
+      width: 48%
+      &-image
+        margin: 0 auto
+        width: 110px
+        height: 110px
+    .test-block-wrapper
+      flex-wrap: wrap
+  .test-block-4 .test-block-input:last-child
+    margin-bottom: 30px
+
+@media (max-width: 476px)
+  .test
+    &-prev-btn
+      margin: 0 0 15px 0
+      width: 80%
+    &-next-btn
+      width: 80%
+  .item-image
+    max-height: 110px

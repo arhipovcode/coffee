@@ -1,0 +1,42 @@
+.request
+  padding: 80px 0
+  background: url(../images/coffee-bg.png) no-repeat center
+  background-size: cover
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1)
+  &-wrap
+    width: 940px
+    margin: 0 auto
+  &-title
+    margin-bottom: 43px
+  &-form
+    width: 835px
+    margin: 0 auto
+  &-input
+    background: #ffffff
+
+@media (max-width: 1200px)
+  .request
+    padding: 60px 0
+    background: url(../images/coffee-bg1200.jpg) no-repeat center/cover
+    &-title
+      margin: 0 auto 25px
+      max-width: 780px
+    &-form
+      width: 750px
+@media (max-width: 992px)
+  .request
+    &-wrap
+      width: 100%
+    &-title
+      margin: 0 auto 25px
+      max-width: 650px
+@media (max-width: 768px)
+  .request
+    &-title
+      margin: 0 auto 25px
+      max-width: 780px
+    &-form
+      width: 100%
+@media (max-width: 576px)
+  .request
+    background: none
